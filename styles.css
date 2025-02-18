@@ -4,7 +4,7 @@
 }
 
 header {
-  background-color: black;
+  background-color: #fff;
 }
 
 header nav {
@@ -17,7 +17,7 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 main {
@@ -35,9 +35,9 @@ main .description {
 
 footer {
   text-align: center;
-  background-color: black;
+  background-color: #333;
 }
 
 footer p {
-  color: white;
+  color: #fff;
 }
