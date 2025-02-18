@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  text-align: center;
+}
+
+main .image-container img {
+  width: 250;
+  height: 200;
+}
+
+main .description {
+  width: 500;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+}
+
+footer p {
+  color: white;
+}
