@@ -4,7 +4,7 @@
 }
 
 header {
-  background-color: #fff;
+  background-color: #333;
 }
 
 header nav {
@@ -25,12 +25,12 @@ main {
 }
 
 main .image-container img {
-  width: 250;
-  height: 200;
+  width: 250px;
+  height: 200px;
 }
 
 main .description {
-  width: 500;
+  width: 500px;
 }
 
 footer {
