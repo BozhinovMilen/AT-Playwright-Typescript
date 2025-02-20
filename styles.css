@@ -9,10 +9,30 @@ header {
 
 header nav {
   text-align: center;
+  overflow: hidden;
 }
 
 header nav ul {
   list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  padding-right: 20px;
+}
+
+header nav ul li a {
+  /* float: left; */
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 header nav ul li a {
@@ -31,6 +51,37 @@ main .image-container img {
 
 main .description {
   width: 500px;
+}
+
+.search {
+  width: 500px;
+  height: 35px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #555555;
+}
+
+.button:active {
+  background-color: #999;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 footer {
