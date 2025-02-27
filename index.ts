@@ -3,13 +3,13 @@
 let number: number = 5;
 number = 10;
 
-const message: string =  'Welcome';
+const message: string = "Welcome";
 
 // String
 let welcomeMessage: string = "Hello, Typescript!";
-let nameOne: string = 'Ivan';
+let nameOne: string = "Ivan";
 let welcomeMessageLength: number = welcomeMessage.length;
-console.log('welcomeMessageLength', welcomeMessageLength);
+console.log("welcomeMessageLength", welcomeMessageLength);
 // Streing interpolation
 let welcomeMessageDetails: string = `My welcomemessage is ${welcomeMessageLength}`;
 let userWelcomeMessage: string = `Welcome, ${nameOne}`;
@@ -40,12 +40,11 @@ console.log("isGrweaterOrEqualal", isGrweaterOrEqual);
 let isLowerOrEqual: boolean = firstNumber <= secondNumber;
 console.log("isLowerOrEqual", isLowerOrEqual);
 
-
 let areNumbersEqual: boolean = 5 === firstNumber && 10 === secondNumber;
 let areNumbersEqualOr: boolean = 5 === firstNumber || 10 === secondNumber;
 
 // Any
-let stringValue: any =  "Hello";
+let stringValue: any = "Hello";
 console.log("stringValue", stringValue);
 stringValue = 10;
 console.log("stringValue", stringValue);
@@ -64,3 +63,39 @@ console.log("stringValue", stringValue);
 // console.log(undefinedValue2);
 // let street: any = '1600 Amphitheatre Prkway';
 // let postalcode: unknown = 1000;
+
+let num: number = 5;
+const isPositive: string =
+  num > 0 ? "The number is positive" : "The number is negative or 0";
+console.log(`The "result" 'is' that: ${isPositive}`);
+
+if (num > 0) {
+  console.log("The number is positive");
+} else if (num < 0) {
+  console.log("The number is negative");
+} else {
+  console.log("The number is equal to 0");
+}
+
+type CarYear = number;
+type CarType = string;
+type CarModel = string;
+const carYear: CarYear = 2001;
+const carType: CarType = "Toyota";
+const carModel: CarModel = "Corola";
+
+type PersonInfoType = string | number;
+const personNameInf: PersonInfoType = "Ivan";
+const personAgeInf: PersonInfoType = 25;
+
+type Car = {
+  type: string;
+  model: string;
+  horsepower: number;
+};
+
+const car: Car = {
+  type: "Fiat",
+  model: "Punto",
+  horsepower: 200,
+};
