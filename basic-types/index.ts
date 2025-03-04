@@ -99,3 +99,7 @@ const car: Car = {
   model: "Punto",
   horsepower: 200,
 };
+
+type Status = "approved" | "rejected" | "pending" | "fullfiled"
+
+const currentStatus: Status = "fullfiled";
