@@ -20,10 +20,10 @@ header nav ul {
   height: 40px;
 }
 
-header nav ul li {
-  /* display: inline; */
-  /* padding-right: 20px; */
-}
+/* header nav ul li { */
+/* display: inline; */
+/* padding-right: 20px; */
+/* } */
 
 header nav ul li a {
   text-decoration: none;
