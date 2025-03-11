@@ -100,6 +100,6 @@ const car: Car = {
   horsepower: 200,
 };
 
-type Status = "approved" | "rejected" | "pending" | "fullfiled"
+type Status = "approved" | "rejected" | "pending" | "fullfiled";
 
 const currentStatus: Status = "fullfiled";

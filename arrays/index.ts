@@ -17,24 +17,23 @@ console.log(numbers);
 numbers.shift();
 console.log(numbers);
 
-let slicedNames: string[] =names.slice(1,3);
+let slicedNames: string[] = names.slice(1, 3);
 console.log(slicedNames);
 
-let multipliedNumbers: number[] = numbers.map(element => element * 2);
+let multipliedNumbers: number[] = numbers.map((element) => element * 2);
 console.log(multipliedNumbers);
 
-let multipliedSomeNumbers: number[] = numbers.map(element => {
-    if (element > 2) {
-        return element * 2;
-    } else {
-        return element;
-    }
+let multipliedSomeNumbers: number[] = numbers.map((element) => {
+  if (element > 2) {
+    return element * 2;
+  } else {
+    return element;
+  }
 });
 console.log(multipliedNumbers);
 
-let numbersGreaterThanTwo: number[] = numbers.filter(element => element > 2);
+let numbersGreaterThanTwo: number[] = numbers.filter((element) => element > 2);
 console.log(numbersGreaterThanTwo);
 
 let sortedNumbers: number[] = numbers.sort();
 console.log(sortedNumbers);
-
