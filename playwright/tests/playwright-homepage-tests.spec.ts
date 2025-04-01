@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { link } from "fs";
 
 test.describe("Playwright home page testing", () => {
   test.beforeEach("Go to Playwright Home page", async ({ page }) => {
