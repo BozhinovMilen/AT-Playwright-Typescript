@@ -1,7 +1,6 @@
 import { test, expect, Page } from "@playwright/test";
 import path from "path";
 
-
 interface Results {
   username: string;
   password: string;
@@ -13,9 +12,8 @@ const results: Results = {
   username: "testUser",
   password: "testPassword",
   comments: "Test comment",
-  dropdownValue: "dd2"
-}
-
+  dropdownValue: "dd2",
+};
 
 const fillFields = async (page: Page, results: Results) => {
   const usernameInput = page.locator("xpath=//input[@name='username']");

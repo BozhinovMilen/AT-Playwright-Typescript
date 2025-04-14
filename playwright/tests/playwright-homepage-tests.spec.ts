@@ -52,6 +52,6 @@ test.describe("Playwright home page testing", () => {
 
     const listItem = page.locator("ul.dropdown__menu a").getByText("Python");
     await listItem.click();
-    await expect(page).toHaveURL("https://playwright.dev/python/")
+    await expect(page).toHaveURL("https://playwright.dev/python/");
   });
 });
