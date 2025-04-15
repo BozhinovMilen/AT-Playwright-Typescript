@@ -4,9 +4,10 @@ import REQUEST_BODY from "../test-data/request_body.json";
 
 
 test.describe("CRUD Operations", () => {
-  test("API test GET Products", async () => {
+  test("API test GET Products", async ({ request }) => {
     const response = await request.get(REQUEST_URL);
     const responseBody = await response.json();
+    console.log(responseBody);
     await expect(response.ok()).toBeTruthy();
     await expect(response.status()).toBe(200);
     await expect(responseBody).toEqual(
@@ -16,7 +17,7 @@ test.describe("CRUD Operations", () => {
     );
   });
 
-  test("API test GET Product by ID", async () => {
+  test("API test GET Product by ID", async ({ request }) => {
     const response = await request.get(`${REQUEST_URL}/${PRODUCT_ID}`);
     const responseBody = await response.json();
     await expect(response.ok()).toBeTruthy();
@@ -32,7 +33,7 @@ test.describe("CRUD Operations", () => {
     await expect(responseBody).toHaveProperty();
   });
 
-  test("API test POST Product", async () => {
+  test("API test POST Product", async ({ request }) => {
     const response = await request.post(REQUEST_URL, {
       data: {
         id: 200,
@@ -57,7 +58,7 @@ test.describe("CRUD Operations", () => {
     await expect(responseBody).toHaveProperty();
   });
 
-  test("API test POST Product wit imported rquest body", async () => {
+  test("API test POST Product wit imported rquest body", async ({ request }) => {
     const requestUrl = "https://fakestoreapi.com/products/6";
     const response = await request.post(REQUEST_URL, {
       data: REQUEST_BODY,
